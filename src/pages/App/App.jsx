@@ -10,7 +10,7 @@ import LoginForm from '../LoginForm/LoginForm';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
-   
+  // mac commit test
   return (
     <main className="App">
       { user ?
