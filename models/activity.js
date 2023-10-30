@@ -17,7 +17,7 @@ const journalSchema = new Schema({
     });
 
 
-//?activity schema
+//? activity schema
 const activitySchema = new Schema ({
     activity: {
         type: String,
