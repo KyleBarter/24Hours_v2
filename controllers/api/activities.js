@@ -6,7 +6,6 @@ module.exports = {
     create,
     index,
     show,
-    saved,
     update,
     edit,
     deleteActivity
@@ -44,18 +43,6 @@ async function show(req, res, next) {
     } catch (err) {
         res.json(err)
         console.log('show ERR -> ', err)
-    }
-}
-
-async function saved(req, res, next){
-    try {
-        const activity = await Activity.findById(req.body.activityId)
-        const user = await User.findById(req.body.userId)
-        user.savedActivities.push(activity)
-        await user.save()
-        res.json({ savedActivities: user.savedActivities})
-    } catch (err) {
-        res.json(err)
     }
 }
 
