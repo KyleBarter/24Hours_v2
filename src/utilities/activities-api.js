@@ -3,7 +3,7 @@ import sendRequest from './send-request'
 const BASE_URL = "/api/activities"
 
 export function getTodaysActivities() {
-    return sendRequest(`${BASE_URL}/`)
+    return sendRequest(`${BASE_URL}`)
 }
 
 export function getSingleActivity(id) {
@@ -11,7 +11,7 @@ export function getSingleActivity(id) {
 }
 
 export function addActivity(formData) {
-    return sendRequest(`${BASE_URL}/`, 'POST', formData)
+    return sendRequest(`${BASE_URL}`, 'POST', formData)
 }
 
 export function editActivity(id, formData) {

@@ -8,9 +8,9 @@ export default function NavBar({ user, setUser }) {
   }
   return (
     <nav>
-      <Link to="/orders">Order History</Link>
+      <Link to="/activities">Today</Link>
       &nbsp; | &nbsp;
-      <Link to="/orders/new">New Order</Link>
+      <Link to="/activities/new">New Activity</Link>
       &nbsp; &nbsp;
       <p>Welcome, {user.name}</p>
       &nbsp; &nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
