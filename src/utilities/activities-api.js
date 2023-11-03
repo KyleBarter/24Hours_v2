@@ -11,6 +11,7 @@ export function getSingleActivity(id) {
 }
 
 export function addActivity(formData) {
+    console.log('create hit')
     return sendRequest(`${BASE_URL}`, 'POST', formData)
 }
 
