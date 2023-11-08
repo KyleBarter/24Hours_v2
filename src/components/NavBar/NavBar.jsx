@@ -8,12 +8,11 @@ export default function NavBar({ user, setUser }) {
   }
   return (
     <nav>
-      <Link to="/today">Today</Link>
+      <Link to="/">Today</Link>
       &nbsp; | &nbsp;
       <Link to="/activities/new">New Activity</Link>
       &nbsp; | &nbsp;
-      <p>Welcome, {user.name}</p>
-      &nbsp; &nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+      <Link to="" onClick={handleLogOut}>Log Out</Link>
     </nav>
   );
 }
