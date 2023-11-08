@@ -11,13 +11,14 @@ export default function AuthPage({ setUser }) {
   const buttonText = signInVisible ? logInText : signUpText;
 
   return (
-    <main>
-
+    <div className="auth-page">
       <h1>24Hours</h1>
       <>
         { signInVisible ? <LoginForm setUser={setUser}/> : <SignUpForm setUser={setUser}/>  }
         <button onClick={onClick}>{buttonText}</button>
       </>
-    </main>
+    </div>
+
+
   );
 }

@@ -17,7 +17,7 @@ export default function App() {
             <NavBar user={user} setUser={setUser}/>
             <Routes>
               {/* Route components in here */}
-              <Route path="/activities" element={<TodayAtAGlance />} />
+              <Route path="/today" element={<TodayAtAGlance />} />
               <Route path="/activities/new" element={<CreateActivity />} />
             </Routes>
           </>
