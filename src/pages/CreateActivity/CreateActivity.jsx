@@ -31,7 +31,7 @@ export default function CreateActivity() {
     }
   }
   
-  return (
+  return ( 
     <>
       <div className="create-activity-form-parent">
         <h1>Create an activity</h1>
