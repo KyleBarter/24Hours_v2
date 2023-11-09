@@ -8,13 +8,13 @@ export default function AuthPage({ setUser }) {
   const signUpText = 'Already have an account?'
   const logInText = 'Create an account'
 
-  const buttonText = signInVisible ? logInText : signUpText;
+  const buttonText = signInVisible ?  signUpText : logInText;
 
   return (
     <div className="auth-page">
       <h1>24Hours</h1>
       <>
-        { signInVisible ? <LoginForm setUser={setUser}/> : <SignUpForm setUser={setUser}/>  }
+        { signInVisible ?  <SignUpForm setUser={setUser}/> : <LoginForm setUser={setUser}/> }
         <button onClick={onClick}>{buttonText}</button>
       </>
     </div>

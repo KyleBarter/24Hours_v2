@@ -4,7 +4,7 @@ const activitiesCtrl = require('../../controllers/api/activities')
 
 
 //? GET routes
-router.get("/", activitiesCtrl.index)
+router.get("/activities", activitiesCtrl.index)
 router.get("/:id/edit", activitiesCtrl.edit)
 router.get('/:id', activitiesCtrl.show)
 

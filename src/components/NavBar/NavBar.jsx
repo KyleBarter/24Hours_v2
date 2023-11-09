@@ -8,7 +8,7 @@ export default function NavBar({ user, setUser }) {
   }
   return (
     <nav>
-      <Link to="/">Today</Link>
+      <Link to="/activities">Today</Link>
       &nbsp; | &nbsp;
       <Link to="/activities/new">New Activity</Link>
       &nbsp; | &nbsp;
